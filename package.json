@@ -1,0 +1,27 @@
+{
+  "name": "ironworker",
+  "version": "1.0.0",
+  "description": "Demo of NPM dependencies on IronWorker platform",
+  "main": "test_docker.js",
+  "scripts": {
+    "install": "docker run -v ${PWD}:/worker -w /worker -it --rm brandonmoser/iron_demo npm install",
+    "run": "docker run -v ${PWD}:/worker -w /worker -it --rm brandonmoser/iron_demo node test_docker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Moser",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.5.0",
+    "ejson": "^2.1.2",
+    "fibers": "^1.0.8",
+    "gridfs-stream": "^1.1.1",
+    "iron_worker": "^0.1.6",
+    "kerberos": "0.0.17",
+    "konphyg": "^1.4.0",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6",
+    "mongoose": "^4.3.1",
+    "request": "^2.67.0",
+    "xml2js": "^0.4.15"
+  }
+}
