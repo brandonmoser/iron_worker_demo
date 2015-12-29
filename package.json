@@ -16,6 +16,7 @@
     "ejson": "^2.1.2",
     "fibers": "^1.0.8",
     "gridfs-stream": "^1.1.1",
+    "iron_mq": "*",
     "iron_worker": "^0.1.6",
     "kerberos": "0.0.17",
     "konphyg": "^1.4.0",
